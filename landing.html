@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <style>
+        body{
+            background-color: honeydew;
+        }
+        header{
+            font-size: 20px;
+            height: 60px;
+        }
+        nav{
+            margin: 0;
+            padding: 0;
+            position: sticky;
+            top:0;
+            z-index: 4;
+        }
+        nav a{
+            text-decoration: none;
+            color: #606060;
+            font-size: 20px;
+            padding: 9px 0px;
+            
+        }
+        nav button{
+            text-decoration: none;
+            color: #606060;
+            font-size: 20px;
+            padding: 9px 0px;
+        }
+        nav .main:hover{
+            /* border-bottom: 2px solid yellow  ; */
+            color: red;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h5{
+            color: #fff;
+        }
+        .body_text p{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 18px;
+        }
+        .body_text a{
+            text-decoration: none;
+            color: #606060;
+            padding: 9px 0px;
+        }
+        footer{
+            height: 100px;
+            background-color: #000;
+            color: #fff;
+            bottom: 0;
+            align-items: center;
+
+            
+        }
+        #card_img .sale{
+            top:20%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container-fluid ">
+         <div class="row bg-dark">
+            <div class="col-md-2 mt-4"></div>
+            <div class="col-md-7 my-3">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+            </div>
+            <div class="col-md-3 my-2 d-flex">
+                <a href="#"><button type="button" class="btn btn-outline-primary m-2">Login</button></a>
+                <button type="button" class="btn btn-outline-secondary m-2 ">Register</button>
+                <div class="img mt-2 ms-2"><a href="#"><img src="images/pngegg.png" alt="" height="40px"></a></div>
+            </div>
+        </div> 
+        </div>
+        <br>
+    </header>
+    <nav>
+        <div class="container px-2 mt-2">
+            <div class="row bg-light opacity-75">
+                <div class="logo col-md-4 mt-3">
+                    <img src="images/logo.png" alt="" height="50px" width="50px"> 
+                </div>
+                <div class="navbar col-md-8 d-flex">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <div class="container-fluid d-flex">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li><a class="nav-link main text-dark fw-normal fs-5"  href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Home
+                                        </a></li>
+                                    <li class="nav-item dropdown mx-4">
+                                        <a class="nav-link dropdown-toggle text-dark fw-normal fs-5"  href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        About
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item text-dark fw-normal fs-5" href="#">About Us</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item text-dark fw-normal fs-5" href="#">Career</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown mx-4">
+                                        <a class="nav-link dropdown-toggle text-dark fw-normal fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Cateogories
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item text-dark fw-normal fs-5" href="#">Action</a></li>
+                                        <li><a class="dropdown-item text-dark fw-normal fs-5" href="#">Another action</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item text-dark fw-normal fs-5" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                <li class="nav-item dropdown mx-4">
+                                    <a class="nav-link dropdown-toggle text-dark fw-normal fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Product
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item text-dark fw-normal fs-5" href="#">Action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item text-dark fw-normal fs-5" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown mx-4">
+                                    <a class="nav-link dropdown-toggle text-dark fw-normal fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Mens Fashoin
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item text-dark fw-normal fs-5" href="#">Action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item text-dark fw-normal fs-5" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                </ul>
+                                
+                            </div>
+                            </div>
+                        </nav>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- start of carousel -->
+    <div class="container">
+        <div class ="row" >
+            <div class="col-md-8 p-2">
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/phn1.jpg" class="d-block w-100" height="500px" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Mobile Phone</h5>
+                        
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/lap1.jpg" class="d-block w-100" height="500px" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Laptops</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/ear1.jpg" class="d-block w-100" height="500px" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Earphone</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+            <div class="col-md-4 p-2 mt-2 border border-dark">
+                <h1 >Weekend Sale(50%)</h1>
+                <div class="card  p-3" >
+                    <img src="images/p1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body bg-dark text-white fw-bold">
+                      <h5 class="card-title">Sunglasses</h5>
+                      <p class="card-text">Here, you can find the best quality headphones with differnet brand from differnet country in various price range.</p>
+                      <a href="#" class="btn btn-outline-primary">More Detail</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>    
+        <!-- start of Card -->
+<br>
+<div class="body_text">
+    <div class="container  bg-light">
+        <h1>Different Cateogories</h1> 
+        <hr>
+        <p>There are many variations of passages of Lorem Ipsum available,
+             but the majority have suffered alteration in some form.</p>
+             <br>
+            <div class="row">
+                <div class="col-md-4 col-12 border-white">
+                    <div class="card mb-2 mt-2">
+                        <div class="row m-1">
+                            <div class="col-md-5 mt-2">
+                                <img src="images/you.png" alt="..." height="150px" width="150px">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <ul>
+                                        <li class="list-item"><a href="">Smart Television</a></li>
+                                        <li class="list-item"><a href="">QLED TV</a></li>
+                                        <li class="list-item"><a href="">Audios</a></li>
+                                        <li class="list-item"><a href="">Headphones</a></li>
+                                        <li class="list-item"><a href="">View All</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+
+                    <div class="col-md-4 col-12 border-white">
+                        <div class="card mb-2 mt-2">
+                            <div class="row m-1">
+                                <div class="col-md-5 mt-2">
+                                    <img src="images/lap.png" alt="..." height="140px" width="150px">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li class="list-item"><a href="">Smart Television</a></li>
+                                            <li class="list-item"><a href="">QLED TV</a></li>
+                                            <li class="list-item"><a href="">Audios</a></li>
+                                            <li class="list-item"><a href="">Headphones</a></li>
+                                            <li class="list-item"><a href="">View All</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 col-12 border-white">
+                        <div class="card mb-2 mt-2">
+                            <div class="row m-1 mt-2">
+                                <div class="col-md-5">
+                                    <img src="images/cam.png" alt="..." height="150px" width="150px">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li class="list-item"><a href="">Smart Television</a></li>
+                                            <li class="list-item"><a href="">QLED TV</a></li>
+                                            <li class="list-item"><a href="">Audios</a></li>
+                                            <li class="list-item"><a href="">Headphones</a></li>
+                                            <li class="list-item"><a href="">View All</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- secondrow -->
+
+                <div class="row">
+                    <div class="col-md-4 col-12 border-white">
+                        <div class="card mb-2 mt-2">
+                            <div class="row m-1">
+                                <div class="col-md-5 mt-2">
+                                    <img src="images/ear1.png" alt="..." height="150px" width="150px">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li class="list-item"><a href="">Smart Television</a></li>
+                                            <li class="list-item"><a href="">QLED TV</a></li>
+                                            <li class="list-item"><a href="">Audios</a></li>
+                                            <li class="list-item"><a href="">Headphones</a></li>
+                                            <li class="list-item"><a href="">View All</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+    
+                        <div class="col-md-4 col-12 border-white">
+                            <div class="card mb-2 mt-2">
+                                <div class="row m-1">
+                                    <div class="col-md-5 mt-2">
+                                        <img src="images/phhn.png" alt="..." height="200px" width="150px">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="card-body">
+                                            <ul>
+                                                <li class="list-item"><a href="">Smart Television</a></li>
+                                                <li class="list-item"><a href="">QLED TV</a></li>
+                                                <li class="list-item"><a href="">Audios</a></li>
+                                                <li class="list-item"><a href="">Headphones</a></li>
+                                                <li class="list-item"><a href="">View All</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                        <div class="col-md-4 col-12 border-white">
+                            <div class="card mb-2 mt-2">
+                                <div class="row m-1 mt-2">
+                                    <div class="col-md-5">
+                                        <img src="images/cpu.png" alt="..." height="150px" width="150px">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="card-body">
+                                            <ul>
+                                                <li class="list-item"><a href="">Smart Television</a></li>
+                                                <li class="list-item"><a href="">QLED TV</a></li>
+                                                <li class="list-item"><a href="">Audios</a></li>
+                                                <li class="list-item"><a href="">Headphones</a></li>
+                                                <li class="list-item"><a href="">View All</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+        </div>
+    </div>
+<!-- start of card -->
+        <div class="container mt-2">  
+            <div class="container col-md-6 col-12">
+                <h1 class="mb-2"><u> Trending Product</u></h1>  
+                <hr>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>  
+           </div>
+            <div class="row p-2">
+                
+                <div class="card col-lg-4  col-md-6 col-sm-12 p-3 " >
+                    <button class=" sale btn btn-danger col-md-4" width="100px">-50%</button>
+                    <img src="images/ear1.jpg" id="card_img" class="card-img-top" alt="...">
+                    
+                    <div class="card-body">
+                      <h4 class="card-title">Noise Canceliing Headphone</h4>
+                      <p class="card-text">Here, you can find the best quality headphones with differnet brand from differnet country in various price range.</p>
+                      <a href="#" class="btn btn-outline-primary">More Detail</a>
+                    </div>
+                  </div>
+    
+                  <div class="card col-lg-4  col-md-6 col-sm-12 p-3">
+                    <img src="images/phn1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title">Mobile Phone</h4>
+                      <p class="card-text">Here, you can find the best quality mobiles with differnet brand from differnet country in various price range.</p>
+                      <a href="#" class="btn btn-outline-primary">More Detail</a>
+                    </div>
+                  </div>
+                  <div class="card col-lg-4  col-md-6 col-sm-12 p-3">
+                    <img src="images/lap1.jpg" class="card-img-top" alt="..." height="190px">
+                    <div class="card-body">
+                      <h4 class="card-title">Laptop</h4>
+                      <p class="card-text">Here, you can find the best quality mobiles with differnet brand from differnet country in various price range.</p>
+                      <a href="#" class="btn btn-outline-primary">More Detail</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="row p-2">
+                <div class="card col-lg-4  col-md-6 col-sm-12 p-3" >
+                    <img src="images/ear1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title">Noise Canceliing Headphone</h4>
+                      <p class="card-text">Here, you can find the best quality headphones with differnet brand from differnet country in various price range.</p>
+                      <a href="#" class="btn btn-outline-primary">More Detail</a>
+                    </div>
+                  </div>
+    
+                  <div class="card col-lg-4  col-md-6 col-sm-12 p-3">
+                    <img src="images/phn1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title">Mobile Phone</h4>
+                      <p class="card-text">Here, you can find the best quality mobiles with differnet brand from differnet country in various price range.</p>
+                      <a href="#" class="btn btn-outline-primary">More Detail</a>
+                    </div>
+                  </div>
+                  <div class="card col-lg-4  col-md-6 col-sm-12 p-3">
+                    <img src="images/lap1.jpg" class="card-img-top" alt="..." height="190px">
+                    <div class="card-body">
+                      <h4 class="card-title">Laptop</h4>
+                      <p class="card-text">Here, you can find the best quality mobiles with differnet brand from differnet country in various price range.</p>
+                      <a href="#" class="btn btn-outline-primary">More Detail</a>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+<br>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4"><h3>Top Rated</h3>
+        <hr style="background-color: blue;">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="col-md-4"><h3>Best seller</h3>
+            <hr style="background-color: blue;">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="col-md-4"><h3>New Arrivals</h3>
+            <hr style="background-color: blue;">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- footer -->
+
+    <footer class="container-fluid px-2 mt-2 text-align-center">
+       
+            <span>&copy; 2021 Company, Inc</span>
+        
+    </footer>
+
+
+
+
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/bootstrap.bundle.js"></script>
+</body>
+</html>
